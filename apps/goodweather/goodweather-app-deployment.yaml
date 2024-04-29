@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: goodweather-app-deploy
+  labels:
+    name: goodweather-app-deploy
+    app: tfg-goodweather-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: goodweather-app-pod
+      app: tfg-goodweather-app
+  template:
+    metadata:
+      name: goodweather-app-pod
+      labels:
+        name: goodweather-app-pod
+        app: tfg-goodweather-app
+    spec:
+      containers:
+        - name: goodweather-app
+          image: aarontas8/goodweather:app-475e4c47d3cfa27ca143b1ffd0f5af20ee6789d8
+          ports:
+          - containerPort: 80

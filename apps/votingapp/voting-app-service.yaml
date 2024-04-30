@@ -13,5 +13,5 @@ spec:
       nodePort: 30004
   selector:
     name: voting-app-pod
-    app: demo-voting-app #Comment for testing
+    app: demo-voting-app
   

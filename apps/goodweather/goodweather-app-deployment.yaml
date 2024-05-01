@@ -6,7 +6,7 @@ metadata:
     name: goodweather-app-deploy
     app: tfg-goodweather-app
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       name: goodweather-app-pod

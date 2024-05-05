@@ -8,8 +8,8 @@ metadata:
 spec:
   type: NodePort
   ports:
-    - port: 8080
-      targetPort: 8080
+    - port: 80
+      targetPort: 80
       nodePort: 30006
   selector:
         name: goodweather-app-pod

@@ -22,7 +22,4 @@ spec:
         - name: goodweather-app
           image: aarontas8/goodweather:app-183f1c94f976a07aa966f14820fd5a6bd1ad8d82
           ports:
-          - containerPort: 80
-      env:
-        - name: ASPNETCORE_URLS
-          value: http://+:80  
+          - containerPort: 8080

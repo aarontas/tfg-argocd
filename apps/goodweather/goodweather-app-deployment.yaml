@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: goodweather-app
-          image: aarontas8/goodweather:app-de509dafa93665465e3f923ba07a26293d93b33f
+          image: aarontas8/goodweather:app-bdf51306bf5bfddbc45693add88a8723ae927895
           ports:
           - containerPort: 80
           env:
